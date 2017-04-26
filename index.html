@@ -15,7 +15,9 @@
 	<script>
 		function boop() {
 			document.getElementById("boop").innerHTML = "BOOP!"
-			document.getElementById("resetBoop").hidden = true
+			var resetBoop = document.getElementByTagId("resetBoop");
+			resetBoop.hidden = false;
+			//document.getElementById("resetBoop").setAttribute() = true
 		}
 		function resetBoop() {
 			document.getElementById("boop").innerHTML = ""
