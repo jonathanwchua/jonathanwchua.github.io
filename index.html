@@ -15,6 +15,7 @@
 	<script>
 		function boop() {
 			document.getElementById("boop").innerHTML = "BOOP!"
+			document.getElementById("resetBoop").hidden = true
 		}
 		function resetBoop() {
 			document.getElementById("boop").innerHTML = ""
@@ -24,9 +25,10 @@
 	<h1>Jonathan Chua</h1>
 	<p>Welcome to my website! Currently a work in progress</p>
 
-	<button onclick="boop()">Click to boop!</button>
+	<button id="boopButton" onclick="boop()">Click to boop!</button>
+	<button id="resetBoop" hidden="true" onclick="resetBoop()">Press to reset boop</button>
 	<p id="boop"></p>
-	<button onclick="resetBoop()">Press to reset boop</button>
+
 
 </body>
 
