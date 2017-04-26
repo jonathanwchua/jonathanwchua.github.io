@@ -14,7 +14,10 @@
 
 	<script>
 		function boop() {
-			document.getElementById("boop").innerHTML = "BOOP!"
+			document.getElementById("boop").innerHTML = "BOOP!";
+		}
+		function resetBoop() {
+			document.getElementById("boop").innerHTML = "";
 		}
 	</script>
 
@@ -23,6 +26,7 @@
 
 	<button onclick="boop()">Click to boop!</button>
 	<p id="boop"></p>
+	<button onclick="resetBoop()">Press to reset boop</button>
 
 </body>
 
