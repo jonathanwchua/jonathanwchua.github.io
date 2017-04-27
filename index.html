@@ -15,8 +15,7 @@
 	<script>
 		function boop() {
 			document.getElementById("boop").innerHTML = "BOOP!"
-			var resetBoop = document.getElementByTagId("resetBoop");
-			resetBoop.hidden = false;
+			document.getElementById("resetBoop").setAttribute(hidden, true)
 			//document.getElementById("resetBoop").setAttribute() = true
 		}
 		function resetBoop() {
@@ -28,7 +27,7 @@
 	<p>Welcome to my website! Currently a work in progress</p>
 
 	<button id="boopButton" onclick="boop()">Click to boop!</button>
-	<button id="resetBoop" hidden="true" onclick="resetBoop()">Press to reset boop</button>
+	<button id="resetBoop" onclick="resetBoop()">Press to reset boop</button>
 	<p id="boop"></p>
 
 
